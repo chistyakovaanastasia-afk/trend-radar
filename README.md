@@ -22,6 +22,7 @@ nicht aufgenommen.
 | `warum` | Ein Satz: warum ist die Lücke gerade jetzt real (mit Beleg) |
 | `kunde` | Wer genau kauft das |
 | `plan` | Array von 3–5 konkreten Schritten: **wo/wie man Kund:innen tatsächlich findet**, nicht nur "anbieten" |
+| `vorlagen` | Array von `{titel, text}` — **fertige, copy-paste-bereite Texte** (DM, Anrufskript, Post-Hook, Flyer-Text) für die Schritte in `plan`, die Kommunikation brauchen |
 | `aufwand` | niedrig / mittel (nie hoch) |
 | `zeitDauerRessourcen` | Was es zum Start braucht, inkl. realistischer Preis-/Kostenangaben wo möglich |
 | `rating` | 1–5 Sterne: Verhältnis Aufwand ↔ Geldverdienst-Potenzial |
@@ -32,6 +33,7 @@ nicht aufgenommen.
 - **Kein generisches Geschäftsmodell als "Trend"**: "Print-on-Demand", "digitale Vorlagen verkaufen", "Micro-Side-Hustles" sind KEINE gültigen Einträge — das sind Business-Modelle, keine erkannten Bedürfnisse. Gesucht ist immer: welches *konkrete* Produkt/welche *konkrete* Dienstleistung fehlt für eine *konkrete* Zielgruppe.
 - **`luecke` muss spezifisch sein**: nicht "Accessoires fehlen", sondern z. B. "Grip-Socks mit Studio-Logo, aber Hersteller X verlangt Mindestbestellung ab 200 Stück". Wenn die Recherche keine derart spezifische, belegte Lücke findet, den Kandidaten verwerfen statt vage zu bleiben.
 - **`plan` muss sagen, WO man Kund:innen konkret findet**, nicht nur "anbieten" oder "bewerben". Gute Beispiele: eine durchsuchbare Plattform + Suchbegriff nennen (z. B. "Google Maps 'Reformer Pilates' + Stadtname"), ein konkretes Signal für Bedarf nennen (z. B. Google-Bewertungen nach bestimmten Beschwerde-Stichworten durchsuchen), einen Kanal + Ansprache-Satz nennen.
+- **Jeder Kommunikations-Schritt braucht eine `vorlagen`-Eintrag**: Sobald `plan` "anschreiben", "anrufen", "posten" oder "vorstellen" enthält, MUSS der tatsächliche Text mitgeliefert werden (DM-Text, Anrufskript, Post-Hook, Flyer-Text) — nicht nur die Anweisung, einen Text zu schreiben. Ton: natürlich, wie eine echte Person schreiben würde, nicht corporate/steif, keine Floskeln, keine Emoji-Inflation.
 - **Reale Nutzer-Erfahrung schlägt Markt-Statistik**: Wenn aus dem Chat/Feedback bekannt ist, dass eine bestimmte Idee für die Nutzerin persönlich nicht funktioniert hat (z. B. Secondhand-Reselling auf Ricardo — aus <10 von 100 Artikeln in 2 Jahren verkauft), diese Idee **nicht wieder aufnehmen**, auch wenn Marktdaten einen "Boom" zeigen. Aggregierte Statistiken schlagen keine dokumentierte persönliche Erfahrung.
 - Lieber 3–4 wirklich konkrete, belegte Einträge pro Runde als 8 vage.
 

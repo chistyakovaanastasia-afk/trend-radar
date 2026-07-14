@@ -64,7 +64,7 @@ function applyFiltersAndSort() {
   if (state.search.trim()) {
     const q = state.search.trim().toLowerCase();
     entries = entries.filter((e) =>
-      [e.trend, e.luecke, e.kunde, ...(e.plan || [])]
+      [e.trend, e.luecke, e.kunde, ...(e.plan || []), ...(e.vorlagen || []).map((v) => v.titel + " " + v.text)]
         .join(" ")
         .toLowerCase()
         .includes(q)
@@ -98,6 +98,23 @@ function cardHtml(e) {
     .map((step) => `<li>${escapeHtml(step)}</li>`)
     .join("");
 
+  const vorlagenItems = (e.vorlagen || [])
+    .map(
+      (v, i) => `
+        <div class="vorlage">
+          <div class="vorlageHead">
+            <span class="vorlageTitel">${escapeHtml(v.titel)}</span>
+            <button class="copyBtn" type="button" data-entry="${escapeHtml(e.id)}" data-vidx="${i}">Kopieren</button>
+          </div>
+          <div class="vorlageText">${escapeHtml(v.text)}</div>
+        </div>`
+    )
+    .join("");
+
+  const vorlagenBlock = (e.vorlagen || []).length
+    ? `<div class="planLabel">📝 Vorlagen — fertig zum Kopieren</div><div class="vorlageList">${vorlagenItems}</div>`
+    : "";
+
   const source = e.quelle
     ? `<a class="sourceLink" href="${escapeHtml(e.quelle)}" target="_blank" rel="noopener">Quelle ↗</a>`
     : "";
@@ -128,6 +145,8 @@ function cardHtml(e) {
 
       <div class="planLabel">📋 Plan</div>
       <ol class="planList">${planItems}</ol>
+
+      ${vorlagenBlock}
 
       <div class="metaRow">
         <span>⏱ ${escapeHtml(e.zeitDauerRessourcen)}</span>
@@ -162,6 +181,22 @@ els.ratingFilter.addEventListener("change", (e) => {
 els.sortSelect.addEventListener("change", (e) => {
   state.sort = e.target.value;
   render();
+});
+
+els.cardList.addEventListener("click", async (e) => {
+  const btn = e.target.closest(".copyBtn");
+  if (!btn) return;
+  const entry = state.data.entries.find((x) => x.id === btn.dataset.entry);
+  const vorlage = entry && entry.vorlagen && entry.vorlagen[Number(btn.dataset.vidx)];
+  if (!vorlage) return;
+  try {
+    await navigator.clipboard.writeText(vorlage.text);
+    const original = btn.textContent;
+    btn.textContent = "Kopiert ✓";
+    setTimeout(() => (btn.textContent = original), 1500);
+  } catch {
+    btn.textContent = "Fehler beim Kopieren";
+  }
 });
 
 loadData();

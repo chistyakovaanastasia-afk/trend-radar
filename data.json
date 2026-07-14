@@ -4,7 +4,7 @@
     "nextRunApprox": "2026-07-28",
     "cycle": 1,
     "region": "Schweiz + global",
-    "kriterien": "Nur konkret identifizierte Lücken (ein spezifisches fehlendes Produkt/Angebot, kein allgemeines Geschäftsmodell), mit niedrigem bis mittlerem Aufwand, schnell umsetzbar, mit klarer Angabe wo/wie man Kund:innen konkret findet."
+    "kriterien": "Nur konkret identifizierte Lücken (ein spezifisches fehlendes Produkt/Angebot, kein allgemeines Geschäftsmodell), mit niedrigem bis mittlerem Aufwand, schnell umsetzbar, mit klarer Angabe wo/wie man Kund:innen konkret findet, und mit fertigen Text-Vorlagen statt vager Handlungsanweisungen."
   },
   "entries": [
     {
@@ -18,9 +18,19 @@
       "kunde": "Kleine, neu eröffnete Reformer-Pilates-Studios in der Schweiz",
       "plan": [
         "Studios finden: Google Maps \"Reformer Pilates\" + Stadtname (Zürich, Basel, Bern, Luzern, Genf) — typischerweise 10–20 kleine Studios pro Grossstadt, Instagram-Profil zeigt meist Gründungsjahr/Grösse",
-        "Inhaber:in direkt per Instagram-DM oder Anruf ansprechen: \"Ich organisiere eine Sammelbestellung für Studio-Grip-Socks, ihr müsst nicht die volle Mindestmenge (200 Paar) allein abnehmen\"",
+        "Inhaber:in direkt per Instagram-DM oder Anruf ansprechen (Vorlage unten)",
         "5–8 Studios sammeln, bis die Mindestmenge des Herstellers erreicht ist (z. B. bei blaenk studio)",
         "Aufschlag von ca. 15–20 % auf den Einkaufspreis als Vermittlungsmarge einbehalten, kein eigenes Lager nötig"
+      ],
+      "vorlagen": [
+        {
+          "titel": "Instagram-DM an Studio-Inhaber:in",
+          "text": "Hoi [Name] 👋 Ich organisiere gerade eine Sammelbestellung für Studio-Grip-Socks mit eurem Logo — ihr müsst nicht die volle Mindestmenge von 200 Paar allein abnehmen, sondern teilt euch die Bestellung mit 4–5 anderen Studios. Hättet ihr Interesse an ca. 30–50 Paar für euer Studio? Ich schick dir gern ein Muster."
+        },
+        {
+          "titel": "Folge-Nachricht mit Fortschritt",
+          "text": "Kurzes Update: wir sind bei [X] von 200 Paar. Für euer Studio wären das ca. CHF [Betrag] bei [Anzahl] Paar. Soll ich euch fix reservieren? Produktion dauert danach ca. 6–8 Wochen."
+        }
       ],
       "aufwand": "niedrig",
       "zeitDauerRessourcen": "Akquise 2–3 Wochen, Produktionszyklus danach ca. 6–8 Wochen; kein eigenes Kapital für Lager nötig",
@@ -39,8 +49,18 @@
       "plan": [
         "3–4 kleine Chargen (je 20 g) von einem verifizierten Schweizer Importeur beziehen (z. B. HARU Matcha oder vergleichbar, mit Bio-Zertifikat direkt aus Japan)",
         "Als Probierset mit Chargennummer/Zertifikat verpacken, dazu eine 1-Seiten-Erklärung \"woran du echten zeremoniellen Matcha erkennst\"",
-        "1–2 kurze TikTok/Instagram-Reels posten, die zeigen, wie man gefälschte \"ceremonial\"-Etiketten erkennt (Aufklärung = Reichweite = Kundschaft)",
+        "1–2 kurze TikTok/Instagram-Reels posten nach dem Skript unten (Aufklärung = Reichweite = Kundschaft)",
         "Bestellungen über Instagram-DM oder einfachen Shopify/Etsy-Mini-Shop abwickeln, Versand per Post"
+      ],
+      "vorlagen": [
+        {
+          "titel": "Reel-Skript (Hook + Aufbau, ca. 20 Sek.)",
+          "text": "HOOK (erste 2 Sek., Text im Bild): „99 % des ‘zeremoniellen’ Matcha im Schweizer Supermarkt ist gar nicht zeremoniell.“ — Dann: Etikett zweier Dosen nebeneinander zeigen, keine Herkunftsangabe vs. Charge+Ursprung. Pulver-Nahaufnahme: leuchtend grün (echt) vs. gelblich-matt (falsch deklariert). Abschluss-Text: „So erkennst du den Unterschied in 10 Sekunden.“"
+        },
+        {
+          "titel": "Produktbeschreibung fürs Probierset",
+          "text": "3 Chargen. 3 Herkunftsnachweise. Kein Etikettenschwindel. Für alle, die wissen wollen, was wirklich in der Dose ist, bevor sie CHF 40 für „zeremoniell“ ausgeben."
+        }
       ],
       "aufwand": "niedrig",
       "zeitDauerRessourcen": "Sourcing 1–2 Wochen, danach laufend; Kapital nur für kleine Erstbestellung (ca. CHF 200–400) nötig",
@@ -58,9 +78,19 @@
       "kunde": "Coiffeure, Physiopraxen, Handwerksbetriebe mit hohem Telefon-/Terminaufwand",
       "plan": [
         "Betriebe mit nachweisbarem Bedarf finden: Google-Maps-Bewertungen in der eigenen Region nach \"schwer erreichbar\", \"niemand ans Telefon\", \"Termin verpasst\" durchsuchen — das sind konkrete, öffentlich sichtbare Beschwerden",
-        "Diese Betriebe anrufen oder persönlich vorbeigehen (nicht E-Mail — wird bei Kleinbetrieben kaum gelesen), mit einem Satz: \"Ich richte Ihnen einen WhatsApp-Bot ein, der Termine automatisch bestätigt, damit weniger Anrufe verpasst werden\"",
+        "Diese Betriebe anrufen oder persönlich vorbeigehen (nicht E-Mail — wird bei Kleinbetrieben kaum gelesen), mit dem Skript unten",
         "Kostenlose 15-Minuten-Demo mit einem selbst gebauten Testbeispiel zeigen (Zapier/Make + Kalenderanbindung)",
-        "Preis: CHF 200–400 einmalige Einrichtung + CHF 30–50/Monat Wartung; nach dem ersten Kunden dessen Vorher/Nachher-Zahlen (z. B. weniger verpasste Anrufe) als Referenz für die nächsten Betriebe nutzen"
+        "Preis: CHF 200–400 einmalige Einrichtung + CHF 30–50/Monat Wartung; nach dem ersten Kunden dessen Vorher/Nachher-Zahlen als Referenz für die nächsten Betriebe nutzen"
+      ],
+      "vorlagen": [
+        {
+          "titel": "Ansprache beim persönlichen Vorbeigehen / Anruf",
+          "text": "Guten Tag, ich habe gesehen, dass online ein paar Kund:innen erwähnt haben, man erreiche Sie telefonisch schlecht. Ich richte kleinen Betrieben wie Ihrem einen WhatsApp-Bot ein, der Termine automatisch bestätigt — einmalig CHF 200–400, fertig in einer Woche. Hätten Sie Interesse an einer kurzen, kostenlosen 15-Minuten-Demo?"
+        },
+        {
+          "titel": "Nachfass-Nachricht nach der Demo",
+          "text": "Danke fürs Zuhören heute. Zur Erinnerung: CHF [Betrag] einmalig + CHF 30–50/Monat Wartung. Ich kann noch diese Woche starten, wenn Sie möchten — einfach kurz bestätigen."
+        }
       ],
       "aufwand": "mittel",
       "zeitDauerRessourcen": "1–2 Wochen für das erste Angebot, danach wenige Tage pro Folgekunde; Tool-Kosten meist < CHF 50/Monat",
@@ -78,9 +108,19 @@
       "kunde": "Ältere Menschen und deren Angehörige, die lokale, vertrauenswürdige Unterstützung suchen",
       "plan": [
         "Leistungsangebot (Einkauf, Arztbegleitung, Technik-Hilfe) definieren, Richtpreis CHF 30–40/Stunde (üblicher Bereich für private Alltagshilfe in der CH)",
-        "Persönlich vorstellen bei: der lokalen Pro-Senectute-Stelle, der Gemeindeverwaltung (Abteilung Alter/Soziales) und 2–3 Hausarztpraxen in der Nachbarschaft — diese vermitteln aktiv an Bedürftige weiter",
-        "Flyer in Quartierzentren, Kirchgemeinden und beim Coop/Migros-Anschlagbrett auslegen",
+        "Persönlich vorstellen bei: der lokalen Pro-Senectute-Stelle, der Gemeindeverwaltung (Abteilung Alter/Soziales) und 2–3 Hausarztpraxen in der Nachbarschaft — mit dem Vorstellungstext unten",
+        "Flyer (Text unten) in Quartierzentren, Kirchgemeinden und beim Coop/Migros-Anschlagbrett auslegen",
         "Vor Start: Privathaftpflicht-Zusatz für die Tätigkeit bei der eigenen Versicherung abklären (meist günstig/inklusive)"
+      ],
+      "vorlagen": [
+        {
+          "titel": "Vorstellung bei Pro Senectute / Gemeinde / Hausarztpraxis",
+          "text": "Guten Tag, mein Name ist [Name]. Ich biete stundenweise Alltagshilfe für ältere Menschen in der Umgebung an — Einkaufen, Arztbegleitung, kleine Technik-Hilfe am Handy. CHF 30–40 pro Stunde, versichert. Falls Sie jemanden kennen, der Unterstützung sucht, hier meine Nummer."
+        },
+        {
+          "titel": "Flyer-Text",
+          "text": "Hilfe im Alltag — ganz in Ihrer Nähe.\nEinkaufen, Arzttermine, Fragen zum Handy: Ich unterstütze Sie stundenweise, zuverlässig und versichert. CHF 30–40/Std. Rufen Sie an, ich komme vorbei: [Telefonnummer]"
+        }
       ],
       "aufwand": "niedrig",
       "zeitDauerRessourcen": "Start in ca. 1 Woche, kein Startkapital nötig",
@@ -93,17 +133,27 @@
       "dateAdded": "2026-07-14",
       "scope": "global + lokal (CH)",
       "trend": "Micro-Aesthetic-Merch statt generischer Meme-Shirts",
-      "luecke": "Generische Meme-T-Shirts verlieren an Zugkraft (Google Trends nahe Null, Gen Z spricht selbst vom \"Great Meme Reset\" gegen \"AI-Slop\"). Gleichzeitig hat die aktive Schweizer \"Wanderhund\"-Community (z. B. @meinwanderhund, @alpinhound auf Instagram) nur generischen Alpen-Tourismus- oder generischen Hunde-Merch zur Auswahl — nichts, das die konkrete Kombination Hunderasse × Alpin-Wandern bedient.",
-      "warum": "2026-Marktanalysen (Printify/Printful) zeigen: die Gewinnerformel ist \"Identity × Interest\" auf Nicht-Textil-Produkten (Sticker, Trinkflaschen) statt generischer Sprüche-Shirts — genau diese Kombination fehlt für Schweizer Wanderhund-Halter:innen.",
-      "kunde": "Halter:innen alpintauglicher Rassen (Berner Sennenhund, Appenzeller, Australian Shepherd) mit aktivem Wander-Hobby, sichtbar unter #wanderhund",
+      "luecke": "Generische Meme-T-Shirts verlieren an Zugkraft (Google Trends nahe Null, Gen Z spricht selbst vom \"Great Meme Reset\" gegen \"AI-Slop\"). Gleichzeitig hat die aktive Schweizer \"Wanderhund\"-Community (v. a. der offizielle Rasseklub KBS mit 5 Regionalgruppen) nur generischen Alpen-Tourismus- oder generischen Hunde-Merch zur Auswahl — nichts, das die konkrete Kombination Hunderasse × Alpin-Wandern bedient.",
+      "warum": "2026-Marktanalysen (Printify/Printful) zeigen: die Gewinnerformel ist \"Identity × Interest\" auf Nicht-Textil-Produkten (Sticker, Trinkflaschen) statt generischer Sprüche-Shirts — genau diese Kombination fehlt für Schweizer Wanderhund-Halter:innen. Festgelegte Rasse: Berner Sennenhund (grösste Sichtbarkeit, offizieller Klub mit realen Wanderungen).",
+      "kunde": "Halter:innen von Berner Sennenhunden mit aktivem Wander-Hobby — Kernzielgruppe: die 5 Regionalgruppen des Schweizerischen Klubs für Berner Sennenhunde (KBS, bernersennenhund.ch)",
       "plan": [
-        "5–6 Design-Motive erstellen: Rassen-Silhouette + Gipfelname/Alpin-Symbol (z. B. \"Berner Sennenhund auf dem Piz Gloria\"), als Sticker + Trinkflaschen-Aufkleber statt als T-Shirt",
-        "Über Printful/Printify + einfachem Etsy- oder Instagram-Shop produzieren, kein eigenes Lager nötig",
-        "3–4 bestehende Wanderhund-Instagram-Accounts (z. B. @meinwanderhund, @alpinhound) direkt anschreiben: kostenloses Musterpaket gegen Story-Erwähnung anbieten",
-        "In Schweizer Hundewander-Facebookgruppen und unter #wanderhund / #berghund posten"
+        "3 Design-Motive sind bereits fertig (Sticker-Set: Basis-Variante + Niesen + Rigi) — siehe separat geteiltes Artefakt",
+        "Über Printful + einfachem Etsy- oder Instagram-Shop produzieren, kein eigenes Lager nötig",
+        "KBS-Regionalgruppen und 3–4 bestehende Berner-Sennenhund-Instagram-Accounts direkt anschreiben (Vorlage unten)",
+        "Beim Launch-Post den Hook unten verwenden"
+      ],
+      "vorlagen": [
+        {
+          "titel": "Anschreiben an Instagram-Accounts / KBS-Regionalgruppen",
+          "text": "Hoi [Name] 👋 Ich hab ein kleines Sticker-Set für Berner-Sennenhund-Wanderer gemacht — Bergmotiv mit Gipfelname, fürs Auto oder die Trinkflasche. Dachte, das passt zu eurer Seite. Magst du 2–3 gratis zum Testen? Kein Verkaufsdruck, würde mich einfach über ehrliches Feedback freuen."
+        },
+        {
+          "titel": "Launch-Post-Hook (3 Varianten)",
+          "text": "1) „Dein Hund war schon auf mehr Schweizer Gipfeln als die meisten Menschen. Zeit für einen Beweis, der an der Flasche klebt.“\n2) „Nicht jeder Hund darf sich Bergsteiger nennen. Deiner schon.“\n3) „Für Wanderhunde, die mehr Höhenmeter im Bein haben als ihr Herrchen.“"
+        }
       ],
       "aufwand": "niedrig",
-      "zeitDauerRessourcen": "Design + Shop-Setup 3–5 Tage, kein Lager, Produktionskosten nur bei tatsächlicher Bestellung",
+      "zeitDauerRessourcen": "Design bereits fertig; Shop-Setup 1–2 Tage, kein Lager, Produktionskosten nur bei tatsächlicher Bestellung",
       "rating": 4,
       "quelle": "https://printify.com/blog/top-selling-niches-on-etsy/"
     }

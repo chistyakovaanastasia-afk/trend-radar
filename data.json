@@ -156,6 +156,32 @@
       "zeitDauerRessourcen": "Design bereits fertig; Shop-Setup 1–2 Tage, kein Lager, Produktionskosten nur bei tatsächlicher Bestellung",
       "rating": 4,
       "quelle": "https://printify.com/blog/top-selling-niches-on-etsy/"
+    },
+    {
+      "id": "c1-06",
+      "cycle": 1,
+      "dateAdded": "2026-07-14",
+      "scope": "lokal (CH)",
+      "trend": "Durchsichtige Kajaks fehlen im Schweizer Boots-/SUP-Verleih",
+      "luecke": "Keiner der etablierten Schweizer Kajak/SUP-Verleiher (Point65 Zugersee, Kuster Sport Zürichsee, Kanuwelt Buochs, Sagilounge Walensee, Kayak-Point Thunersee) bietet durchsichtige/kristallklare Kajaks an — obwohl das Produkt (z. B. Crystal Kayak) international sehr gefragt und extrem Instagram-tauglich ist. Alle geprüften Anbieter führen praktisch identische Standard-Hartschalenkajaks.",
+      "warum": "Kajak/SUP-Verleih an Schweizer Seen ist ein bewährtes, funktionierendes Geschäftsmodell mit realen Preisen (CHF 25–90 pro Verleiheinheit) — aber ohne jede Differenzierung zwischen den Anbietern. Ein optisch auffälliges Nischenprodukt sticht sofort heraus.",
+      "kunde": "Primär: bestehende Kajak/SUP-Verleiher an Schweizer Seen (als B2B-Partner). Sekundär deren Endkund:innen (Tourist:innen, Social-Media-affine Ausflügler:innen, die für ein besonderes Foto/Erlebnis bezahlen)",
+      "plan": [
+        "2–3 Crystal Kayaks importieren (Hersteller-Preis USD 1'100–1'600/Stück; Versand/Zoll aus den USA einplanen, günstigere Alibaba-Alternativen existieren, aber Qualität vorher prüfen)",
+        "Bestehende Verleiher direkt kontaktieren (Point65, Kuster Sport, Kanuwelt Buochs, Sagilounge, Kayak-Point) mit dem Angebot unten — sie haben bereits Bewilligung, Standort und Laufkundschaft, du musst nichts davon selbst aufbauen",
+        "Falls kein Verleiher mitmacht: eigene Bewilligung beim kantonalen Schifffahrtsamt anfragen (SUP/Kajak sind zulassungsfrei für Privatnutzung, aber gewerbliche Vermietung braucht eine kantonale Konzession — Aufwand/Dauer je Kanton verschieden)",
+        "Premium-Preis ansetzen: CHF 45–60 für 2 Std. statt der üblichen CHF 35–40 für Standard-Kajaks — die Neuheit rechtfertigt den Aufpreis"
+      ],
+      "vorlagen": [
+        {
+          "titel": "Anschreiben an bestehende Kajak/SUP-Verleiher",
+          "text": "Grüezi [Name], ich habe eine Idee für Ihre Kajak-/SUP-Vermietung: durchsichtige Kajaks (Crystal Kayak) sind ein echter Blickfang und aktuell bei keinem Anbieter am [See] verfügbar — ideal für Social-Media-Fotos Ihrer Gäste. Ich würde 2–3 Stück beschaffen und sie Ihnen gegen Umsatzbeteiligung in Ihre bestehende Flotte integrieren — für Sie kein Zusatzaufwand ausser der normalen Vermietung. Hätten Sie Interesse an einem kurzen Gespräch?"
+        }
+      ],
+      "aufwand": "mittel",
+      "zeitDauerRessourcen": "Sourcing/Import 3–6 Wochen, Verhandlung mit Verleihpartner parallel möglich; Startkapital ca. CHF 3'500–6'000 für 2–3 Kajaks inkl. Fracht/Zoll",
+      "rating": 4,
+      "quelle": "https://crystalkayak.com/collections/crystal-kayak-explorer-transparent-clear-canoe-kayak"
     }
   ]
 }

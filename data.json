@@ -86,6 +86,26 @@
       "zeitDauerRessourcen": "Start in ca. 1 Woche, kein Startkapital nötig",
       "rating": 4,
       "quelle": "https://newco.ch/blog/geschaeftsidee-finden--64"
+    },
+    {
+      "id": "c1-05",
+      "cycle": 1,
+      "dateAdded": "2026-07-14",
+      "scope": "global + lokal (CH)",
+      "trend": "Micro-Aesthetic-Merch statt generischer Meme-Shirts",
+      "luecke": "Generische Meme-T-Shirts verlieren an Zugkraft (Google Trends nahe Null, Gen Z spricht selbst vom \"Great Meme Reset\" gegen \"AI-Slop\"). Gleichzeitig hat die aktive Schweizer \"Wanderhund\"-Community (z. B. @meinwanderhund, @alpinhound auf Instagram) nur generischen Alpen-Tourismus- oder generischen Hunde-Merch zur Auswahl — nichts, das die konkrete Kombination Hunderasse × Alpin-Wandern bedient.",
+      "warum": "2026-Marktanalysen (Printify/Printful) zeigen: die Gewinnerformel ist \"Identity × Interest\" auf Nicht-Textil-Produkten (Sticker, Trinkflaschen) statt generischer Sprüche-Shirts — genau diese Kombination fehlt für Schweizer Wanderhund-Halter:innen.",
+      "kunde": "Halter:innen alpintauglicher Rassen (Berner Sennenhund, Appenzeller, Australian Shepherd) mit aktivem Wander-Hobby, sichtbar unter #wanderhund",
+      "plan": [
+        "5–6 Design-Motive erstellen: Rassen-Silhouette + Gipfelname/Alpin-Symbol (z. B. \"Berner Sennenhund auf dem Piz Gloria\"), als Sticker + Trinkflaschen-Aufkleber statt als T-Shirt",
+        "Über Printful/Printify + einfachem Etsy- oder Instagram-Shop produzieren, kein eigenes Lager nötig",
+        "3–4 bestehende Wanderhund-Instagram-Accounts (z. B. @meinwanderhund, @alpinhound) direkt anschreiben: kostenloses Musterpaket gegen Story-Erwähnung anbieten",
+        "In Schweizer Hundewander-Facebookgruppen und unter #wanderhund / #berghund posten"
+      ],
+      "aufwand": "niedrig",
+      "zeitDauerRessourcen": "Design + Shop-Setup 3–5 Tage, kein Lager, Produktionskosten nur bei tatsächlicher Bestellung",
+      "rating": 4,
+      "quelle": "https://printify.com/blog/top-selling-niches-on-etsy/"
     }
   ]
 }

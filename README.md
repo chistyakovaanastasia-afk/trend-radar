@@ -48,53 +48,58 @@ standardmässig nach `dateAdded` sortiert (**neueste Trends immer oben**).
 
 ### Wie eine automatisierte Update-Runde ablaufen soll
 
-Eine Claude-Routine wird alle 14 Tage exakt zum nächsten Termin neu
-ausgelöst (kein wöchentliches Polling mit Schwellenwert-Prüfung — die
-Terminierung selbst sorgt für den 2-Wochen-Abstand, siehe unten). Ablauf
-pro Runde:
+Eine **wiederkehrende** Claude-Routine feuert jede Woche (fester Cron-Termin,
+nachts) — Cron kann kein "alle 14 Tage" ausdrücken, deshalb prüft jeder Lauf
+selbst, ob seit der letzten echten Runde genug Zeit vergangen ist:
 
-1. `trends/data.json` lesen — sowohl `meta` als auch die **vollständige
-   Liste bestehender `entries`** (insbesondere `trend` und `luecke`), und
-   diese README komplett (v. a. den Abschnitt "Qualitätsregeln" oben).
-2. Konkrete Lücken recherchieren (Websuche, gezielt nach Beschwerden/
-   Rezensionen/Foren-Posts suchen à la "kann X nirgends finden", "Y fehlt
-   in der Schweiz"), keine allgemeinen Markttrend-Berichte abschreiben.
-   Mischung aus global und lokal (CH) beibehalten. Die Situation kann sich
-   seit der letzten Runde verändert haben, es wird also frisch
+1. `data.json` (im Repo-Root) lesen — sowohl `meta` als auch die
+   **vollständige Liste bestehender `entries`** (insbesondere `trend` und
+   `luecke`), und diese README komplett (v. a. "Qualitätsregeln" oben).
+2. **Freshness-Check**: Sind seit `meta.lastRun` weniger als 13 Tage
+   vergangen? Dann sofort stoppen — nichts committen, keine Benachrichtigung.
+   Das ist kein Zensur-Kriterium, sondern nur ein Sicherheitsnetz: Der
+   Wochen-Cron-Termin selbst ist die verlässliche, dauerhafte Terminierung;
+   dieser Check verhindert bloss, dass zwischen zwei Wochen-Feuerungen eine
+   zusätzliche, zu frühe Runde entsteht. Fällt ein Lauf mal aus, holt der
+   nächste wöchentliche Termin es automatisch nach — die Kette kann nicht
+   abreissen, weil nichts sich selbst neu terminieren muss.
+3. Sind ≥13 Tage vergangen: konkrete Lücken recherchieren (Websuche, gezielt
+   nach Beschwerden/Rezensionen/Foren-Posts suchen à la "kann X nirgends
+   finden", "Y fehlt in der Schweiz"), keine allgemeinen Markttrend-Berichte
+   abschreiben. Mischung aus global und lokal (CH) beibehalten. Die Situation
+   kann sich seit der letzten Runde verändert haben, es wird also frisch
    recherchiert, nicht aus dem Gedächtnis wiederholt.
-3. **Keine Wiederholungen**: Vor dem Hinzufügen jeden neuen Kandidaten
-   gegen alle vorhandenen `entries` abgleichen (Thema/Kernidee, nicht nur
-   exakter Titel-Wortlaut). Ist ein Trend im Kern schon vorhanden:
+4. **Keine Wiederholungen**: Vor dem Hinzufügen jeden neuen Kandidaten gegen
+   alle vorhandenen `entries` abgleichen (Thema/Kernidee, nicht nur exakter
+   Titel-Wortlaut). Ist ein Trend im Kern schon vorhanden:
    - Wenn es nur ein spürbares Update ist (neue Zahl, neuer Beleg), das
      bestehende Feld `luecke`/`plan`/`rating` in-place aktualisieren statt
      einen neuen Eintrag anzulegen.
    - Sonst überspringen und eine wirklich neue Lücke suchen.
-4. 3–6 wirklich neue, konkrete Einträge nach dem Schema ergänzen (siehe
+5. 3–6 wirklich neue, konkrete Einträge nach dem Schema ergänzen (siehe
    Qualitätsregeln oben — Qualität vor Quantität), mit fortlaufender
    `cycle`-Nummer, eindeutiger `id` (z. B. `c<cycle>-<lfd. Nr.>`) und
    realer Quelle je Eintrag. Nur `aufwand: "niedrig"` oder `"mittel"`
-   aufnehmen.
-5. `meta.lastRun`, `meta.nextRunApprox` und `meta.cycle` aktualisieren.
-6. Änderungen committen und pushen.
-7. Kurze Push-Benachrichtigung an die Nutzerin senden (Link zur Seite).
-8. **Die nächste Routine-Ausführung selbst terminieren**: einen neuen
-   One-Shot-Trigger für exakt 14 Tage später (gleiche Nachtzeit) anlegen,
-   der wiederum eine frische Session mit dieser Anleitung startet. Ohne
-   diesen Schritt bricht die Kette ab.
+   aufnehmen (nie "hoch" — grössere Vorhaben wie eine eigene App gehören
+   nicht in diesen automatisierten Zyklus, dafür braucht es ein eigenes,
+   manuell geführtes Gespräch).
+6. `meta.lastRun`, `meta.nextRunApprox` und `meta.cycle` aktualisieren.
+7. Änderungen direkt auf `main` committen und pushen (keine PR nötig für
+   Routine-Updates).
+8. Kurze Push-Benachrichtigung an die Nutzerin senden (Link zur Seite).
 
 ## Hosting (GitHub Pages)
 
-Wird über denselben Workflow wie die anderen Tools in diesem Repo
-veröffentlicht (`.github/workflows/deploy.yml`, deployt das ganze Repo).
-Nach Aktivierung von GitHub Pages ist das Dashboard erreichbar unter:
+Eigenständiges Repo, Dateien liegen direkt im Root (`index.html`, `app.js`,
+`style.css`, `data.json`). Live unter:
 
 ```
-https://<user>.github.io/<repo>/trends/
+https://chistyakovaanastasia-afk.github.io/trend-radar/
 ```
 
 ## Lokal testen
 
 ```bash
 python3 -m http.server 8080
-# dann im Browser: http://localhost:8080/trends/
+# dann im Browser: http://localhost:8080/
 ```
